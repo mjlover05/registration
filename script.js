@@ -6,7 +6,7 @@ document.getElementById("registrationForm").addEventListener("submit", async fun
     const password = document.getElementById("password").value;
 
     try {
-        const response = await fetch("https://apex.oracle.com/pls/apex/mjlover/register_user//", {
+        const response = await fetch("https://apex.oracle.com/pls/apex/mjlover/register_user/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
